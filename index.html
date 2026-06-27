@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nattakit Film | Data Analyst Portfolio</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Nattakit Film, a Data Analyst specializing in unlocking insights from data using SQL, Python, R, and interactive dashboards.">
+    <meta name="keywords" content="Data Analyst, Portfolio, Nattakit Film, SQL, Python, Tableau, PowerBI, Machine Learning, Data Visualization">
+    
+    <!-- JetBrains Mono Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Chart.js for interactive dashboard -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Glowing Background blobs for cyber aesthetic -->
+    <div class="blob-bg blob-1"></div>
+    <div class="blob-bg blob-2"></div>
+    <div class="blob-bg blob-3"></div>
+
+    <!-- Navigation Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Nattakit.Film</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#dashboard" class="nav-link">Live Viz</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-outline btn-sm">Let's Connect</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i data-lucide="sun" class="sun-icon"></i>
+                <i data-lucide="moon" class="moon-icon"></i>
+            </button>
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-glow">
+                        <span class="pulse-dot"></span>
+                        Available for Data Analyst Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-glow">Nattakit Film</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        &gt; <span class="typing-text">Data Analyst</span>
+                    </h2>
+                    <p class="hero-description">
+                        I specialize in translating raw, complex datasets into clear, actionable business strategies. Through robust SQL querying, Python analytics, and interactive visualizations, I bridge the gap between data and execution.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i data-lucide="folder-git-2" class="btn-icon"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i data-lucide="mail" class="btn-icon"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="terminal-mock">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="term-btn close"></span>
+                                <span class="term-btn minimize"></span>
+                                <span class="term-btn expand"></span>
+                            </div>
+                            <div class="terminal-title">bash - nattakit@analytics</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="term-line"><span class="prompt">$</span> query_skills --category languages</div>
+                            <div class="term-output text-cyan">["SQL", "Python", "R", "SAS"]</div>
+                            <div class="term-line"><span class="prompt">$</span> query_skills --category tools</div>
+                            <div class="term-output text-green">["Tableau", "PowerBI", "Excel", "BigQuery"]</div>
+                            <div class="term-line"><span class="prompt">$</span> load_metrics --user nattakit</div>
+                            <div class="term-output">
+                                Row count: <span class="text-glow">12,500,000+ rows analyzed</span><br>
+                                Insights delivered: <span class="text-cyan">80% efficiency gained</span><br>
+                                Dashboards built: <span class="text-green">24 business tools</span>
+                            </div>
+                            <div class="term-line"><span class="prompt">$</span> <span class="cursor">|</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down" aria-label="Scroll down">
+                <i data-lucide="chevrons-down"></i>
+            </a>
+        </section>
+
+        <!-- About / Skills Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="num">01.</span> About & Skills</h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I am a data analyst who loves solving puzzles. My focus is on turning noisy datasets into clean, reliable pipelines and beautiful dashboards that business stakeholders can actually use to drive revenue and efficiency.
+                        </p>
+                        <p>
+                            With experience working across database design, automated pipeline creation, and statistical analysis, I approach data with both a developer's mindset and a business strategist's vision.
+                        </p>
+                        <p>Here are the core technologies and concepts I work with daily:</p>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3><i data-lucide="database"></i> Data Querying & Storage</h3>
+                            <div class="skill-tags">
+                                <span class="tag">SQL (PostgreSQL / MySQL)</span>
+                                <span class="tag">Google BigQuery</span>
+                                <span class="tag">AWS Athena</span>
+                                <span class="tag">Data Warehousing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3><i data-lucide="code"></i> Coding & Analysis</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Python (Pandas / NumPy)</span>
+                                <span class="tag">R (ggplot2)</span>
+                                <span class="tag">Jupyter Notebooks</span>
+                                <span class="tag">Scikit-Learn (ML)</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3><i data-lucide="bar-chart-3"></i> Visualization & BI</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Tableau</span>
+                                <span class="tag">PowerBI</span>
+                                <span class="tag">Chart.js / D3.js</span>
+                                <span class="tag">Looker Studio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Viz Section (Dashboard showcase) -->
+        <section id="dashboard" class="section dashboard-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="num">02.</span> Live Data Viz Showcase</h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <p class="section-subtitle">
+                    Interact with the mini-dashboard below to see how I build client-side data stories. Click the buttons to load different analytical angles.
+                </p>
+                
+                <div class="dashboard-widget glass-panel">
+                    <div class="dashboard-header">
+                        <div class="dashboard-info">
+                            <span class="db-indicator">LIVE PREVIEW</span>
+                            <h3 id="dashboard-title">Marketing Campaign ROI Analysis</h3>
+                        </div>
+                        <div class="dashboard-controls">
+                            <button class="db-btn active" data-dataset="campaign">ROI & Costs</button>
+                            <button class="db-btn" data-dataset="traffic">Traffic Source</button>
+                            <button class="db-btn" data-dataset="retention">User Cohorts</button>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <canvas id="analyticsChart"></canvas>
+                    </div>
+                    
+                    <div class="dashboard-footer">
+                        <div class="stat-card">
+                            <span class="stat-label">Total Conversions</span>
+                            <span class="stat-value text-green" id="stat-conversions">4,820</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Avg. Acquisition Cost (CAC)</span>
+                            <span class="stat-value text-cyan" id="stat-cac">$12.50</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">ROAS (Return on Ad Spend)</span>
+                            <span class="stat-value text-glow" id="stat-roas">3.8x</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="num">03.</span> Analytics Projects</h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <i data-lucide="users" class="project-icon text-cyan"></i>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" aria-label="GitHub Repository"><i data-lucide="github"></i></a>
+                                <a href="#" aria-label="View Notebook"><i data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Customer Cohort & Churn Study</h3>
+                            <p class="project-desc">
+                                Conducted transaction analysis of 500k+ records to build monthly retention cohorts. Pinpointed peak churn windows and identified high-LTV behavior groups.
+                            </p>
+                            <div class="project-impact">
+                                <span class="impact-label">Business Value:</span>
+                                <p class="impact-text">Helped marketing target early-churn risk points, increasing retention by 14.5%.</p>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Python (Pandas)</span>
+                            <span class="tool-tag">Seaborn</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <i data-lucide="line-chart" class="project-icon text-green"></i>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" aria-label="GitHub Repository"><i data-lucide="github"></i></a>
+                                <a href="#dashboard" aria-label="Interactive Demo"><i data-lucide="play-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Marketing ROI Dashboard</h3>
+                            <p class="project-desc">
+                                Programmed an interactive data tool that parses multi-channel advertising spends. Visualizes real-time click-through rates (CTR) and ROI indicators.
+                            </p>
+                            <div class="project-impact">
+                                <span class="impact-label">Business Value:</span>
+                                <p class="impact-text">Centralized dashboarding reduced report creation time from 8 hours/week to instantaneous.</p>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <span class="tool-tag">JavaScript</span>
+                            <span class="tool-tag">Chart.js</span>
+                            <span class="tool-tag">HTML & CSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <i data-lucide="home" class="project-icon text-glow-color"></i>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" aria-label="GitHub Repository"><i data-lucide="github"></i></a>
+                                <a href="#" aria-label="Notebook"><i data-lucide="external-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Real Estate Price Predictor</h3>
+                            <p class="project-desc">
+                                Built and cross-validated Random Forest & XGBoost regression models to forecast local housing costs and score variables affecting market valuations.
+                            </p>
+                            <div class="project-impact">
+                                <span class="impact-label">Business Value:</span>
+                                <p class="impact-text">Achieved an R² score of 0.89. Found that proximity to transit centers had 12% higher value weight than square footage alone.</p>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <span class="tool-tag">Python (Scikit-Learn)</span>
+                            <span class="tool-tag">Regression</span>
+                            <span class="tool-tag">Matplotlib</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="num">04.</span> Contact & Network</h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info-card glass-panel">
+                        <h3 class="contact-card-title">Let's build something together!</h3>
+                        <p class="contact-card-text">
+                            I am open to contract roles, full-time positions, and collaborative analytics projects. If you have questions about my work or want to look at a dataset, feel free to drop a message.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <i data-lucide="mail" class="contact-icon"></i>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:nattakit.film@example.com" class="contact-link">nattakit.film@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="linkedin" class="contact-icon"></i>
+                                <div>
+                                    <span class="contact-label">LinkedIn</span>
+                                    <a href="https://linkedin.com" target="_blank" class="contact-link">linkedin.com/in/nattakit-film</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="github" class="contact-icon"></i>
+                                <div>
+                                    <span class="contact-label">GitHub</span>
+                                    <a href="https://github.com" target="_blank" class="contact-link">github.com/nattakit-film</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form glass-panel" id="contactForm">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email</label>
+                            <input type="email" id="form-email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="5" placeholder="Let's talk about data..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i data-lucide="send" class="btn-icon"></i> Send Message
+                        </button>
+                        <div id="form-feedback" class="form-feedback hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Nattakit Film. All rights reserved.</p>
+            <p class="tech-stack-built">Built with <span class="text-cyan">HTML5</span>, <span class="text-green">CSS3</span>, and <span class="text-glow">Vanilla JS</span></p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
