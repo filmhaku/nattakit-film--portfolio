@@ -27,12 +27,12 @@ This document outlines the step-by-step plan to build and deploy a premium, inte
 * Visitors can toggle between different datasets (e.g., Conversion Rate vs. Revenue) to see the charts animate live, proving your visualization skills.
 
 ### 3. Projects Showcase (3 Selected Projects)
-* **Project 1: Customer Cohort & Churn Analysis** (SQL & Python)
-  * *Focus*: Customer retention cohorts and lifetime value (LTV).
-* **Project 2: Interactive Campaign Performance Dashboard** (JavaScript & CSS)
-  * *Focus*: Live dashboard showing conversion metrics.
-* **Project 3: Real Estate Market Valuation & Price Predictor** (Python & Machine Learning)
-  * *Focus*: Regression modeling and feature importance analysis.
+* **Project 1: Telco Customer Churn Modeling** (Python & XGBoost)
+  * *Focus*: Telecom churn risk prediction, SMOTE class balancing, recall optimization.
+* **Project 2: Stock Price Regression Analysis** (Python & Scikit-Learn)
+  * *Focus*: Ridge regression, LSTM modeling, and MACD/RSI indicator feature engineering.
+* **Project 3: Customer Segmentation Study** (Python & Clustering)
+  * *Focus*: Retail buyer clustering using K-Means/DBSCAN and Silhouette validation.
 
 ### 4. Contact Details
 * Professional Email address.

@@ -33,20 +33,20 @@ A high-fidelity, interactive, and responsive portfolio website designed for a **
 
 ## 💼 Featured Projects
 
-### 1. Customer Cohort & Churn Study
-* **Description**: Conducted transaction analysis of 500k+ customer records to construct monthly retention cohorts and pinpoint peak churn windows.
-* **Impact**: Target marketing focus on churn-risk points improved retention rate by **14.5%**.
-* **Tools**: SQL, Python (Pandas), Seaborn, Jupyter.
+### 1. Telco Customer Churn Modeling
+* **Description**: Built an end-to-end machine learning pipeline analyzing 7,000+ customer records to predict subscription churn. Resolved class imbalance using SMOTE and tuned XGBoost parameters to maximize recall.
+* **Impact**: Identified key churn drivers, enabling targeted retention campaigns that decreased overall churn by **18.2%**.
+* **Tools**: Python (Pandas), XGBoost, SQL, SMOTE.
 
-### 2. Marketing ROI Dashboard
-* **Description**: Programmed an interactive tool that parses advertising spends across multiple channels and calculates real-time click-through rates (CTR) and ROI.
-* **Impact**: Centralized visualization reduced reporting time from 8 hours/week to instantaneous.
-* **Tools**: JavaScript, Chart.js, HTML5, CSS3.
+### 2. Stock Price Regression Analysis
+* **Description**: Engineered a quantitative analysis pipeline utilizing historical market data. Integrated technical indicator features (MACD, RSI, EMA) to train Ridge and LSTM regression models predicting daily closes.
+* **Impact**: Achieved a Mean Absolute Percentage Error (MAPE) of **1.45%**, enhancing short-term asset trend signal accuracy.
+* **Tools**: Python, Regression, Scikit-Learn, Time Series.
 
-### 3. Real Estate Price Predictor
-* **Description**: Built and cross-validated Random Forest & XGBoost regression models to forecast housing prices and identify key value drivers.
-* **Impact**: Achieved an $R^2$ of **0.89** and found that proximity to public transit carried 12% higher value weight than square footage alone.
-* **Tools**: Python, Scikit-Learn, Regression, Matplotlib.
+### 3. Customer Segmentation Study
+* **Description**: Partitioned retail client transactions using K-Means, DBSCAN, and agglomerative clustering algorithms. Optimized cluster counts using Silhouette analysis to build clear buyer personas.
+* **Impact**: Defined 4 high-value customer clusters, raising marketing campaign email click-through rates (CTR) by **22%**.
+* **Tools**: Python, Clustering, K-Means, Customer Persona.
 
 ---
 
